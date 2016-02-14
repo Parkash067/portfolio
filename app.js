@@ -29,7 +29,7 @@ app.get('/logout', function (req, res) {
 //DataBase connection
 ////mongodb://test:test@ds061345.mongolab.com:61345/portfolioapp
 //mongodb://localhost/portfolioapp
-var dbUri = "mongodb://localhost/portfolioapp";
+var dbUri = "mongodb://test:test@ds061345.mongolab.com:61345/portfolioapp";
 mongoose.connect(dbUri);
 mongoose.connection.on('connected', function () {
     console.log('Database connected');
